@@ -11,7 +11,7 @@
             resultContainer.innerText = 'Loading...';
 
             // Make a call to the REST API
-            fetch('https://restcountries.com/v3.1/all')
+            fetch('https://restcountries.com/v3.1/all,flags')
                 .then(response => response.json())
                 .then(data => {
                     // Extract the common name of each country and join them into a string with line breaks
